@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<head>
+	<title>Exercício3</title>
+		<script>
+			function arial(){
+				var fon = document.getElementById("titulo");
+				fon.style.fontFamily = 'arial'; 
+			}
+
+			function calibri(){
+				var fon = document.getElementById("titulo");
+				fon.style.fontFamily = 'calibri'; 
+			}
+
+			function algerian(){
+				var fon = document.getElementById("titulo");
+				fon.style.fontFamily = 'algerian'; 
+			}
+
+			function bodoni(){
+				var fon = document.getElementById("titulo");
+				fon.style.fontFamily = 'bodoni'; 
+			}
+
+			function georgia(){
+				var fon = document.getElementById("titulo");
+				fon.style.fontFamily = 'georgia'; 
+			}
+
+
+		</script>
+	</head>
+	<body>
+
+	<h1 id="titulo">Esta Fonte deverá mudar quando eu mandar</h1>
+		<form>
+			<input type="button" value="Arial" onclick="arial()" style=";width: 70px; height: 25px;margin-left: 10px;font-weight: bold; ">
+			<input type="button" value="Calibri" onclick="calibri()" style=";width: 70px; height: 25px;margin-left: 10px;font-weight: bold; ">
+			<input type="button" value="Algerian" onclick="algerian()" style=";width: 70px; height: 25px;margin-left: 10px;font-weight: bold; ">
+			<input type="button" value="Bodoni" onclick="bodoni()" style=";width: 70px; height: 25px;margin-left: 10px;font-weight: bold; ">
+			<input type="button" value="Georgia" onclick="georgia()" style=";width: 70px; height: 25px;margin-left: 10px;font-weight: bold; ">
+		</form>
+	</body>
+</html>

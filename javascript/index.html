@@ -1,0 +1,55 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Botões</title>
+
+	<style type="text/css">
+	.btn{
+		border-radius: 10px;
+		padding: 15px;
+		margin-left: 15px;
+		background-color: green;
+		color: white;  
+	}	
+
+
+	</style>
+
+
+	<script type="text/javascript">
+		
+
+			function fatorial(num){
+			if( num < 0){
+				alert ("A função deu errado");
+			}else{
+				if(num == 0){
+					return 1;
+				}else{
+					return (num * fatorial (num-1));
+						}
+				}
+			}
+
+			function fatorialfinal(x){
+				var funcao1 = fatorial(x);
+				resultado = x + "! = ";
+				for (var i = 1; i< x; i++) {
+					resultado= resultado+i+" x ";
+				} 
+				resultado=resultado+i+" = "+funcao1;
+				document.write("<body style='color:white;background-color:green;'> <p>"+resultado+"</p> </body>");
+
+			}
+	</script>
+</head>
+<body>
+	<form align="center">
+		<input type="submit" value="2" onclick="fatorialfinal(2)" class="btn">
+		<input type="submit" value="6" onclick="fatorialfinal(6)" class="btn">
+		<input type="submit" value="8" onclick="fatorialfinal(8)" class="btn">
+		<input type="submit" value="10" onclick="fatorialfinal(10)" class="btn">
+	</form><br><br><br>
+	<h1 align="center">Trabalho Realizado por Guilherme Nº11 e Vinícius Nº28</h1>
+</body>
+</html>

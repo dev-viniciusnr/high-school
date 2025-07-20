@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<head>
+	<title>Exercício4</title>
+		<script>
+		function tab(){
+		var a = 5;
+		texto="";
+		final="";
+		for(i = 1; i <= 10; i++){
+			texto= a +' X '+i+' = '+(a*i)+'<br>';
+			final= final + texto;
+		}
+		document.write("<b>Tabuada do Nº5<b/>" + "<br>" + final);
+	}
+		</script>
+	</head>
+	<body>
+
+	<h4>Tabuada do Nº5</h4>
+		<form id="pa">
+			<input type="button" onclick="tab()" value="Clique Aqui"></input>
+		</form>
+	</body>
+</html>

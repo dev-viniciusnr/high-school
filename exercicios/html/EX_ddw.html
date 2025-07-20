@@ -1,0 +1,50 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Animação Básica Javascript</title>
+	<style type="text/css">
+		.button{
+			margin:2px;
+			background-color:#090;
+			color:#FFF;
+			font-style:italic;
+			width:80px;
+			border-radius:50px;
+		}
+		
+	</style>
+</head>
+<body>
+	<button class="button" onClick="andar()">Iniciar</button>&nbsp;&nbsp;
+    <button class="button" onClick="parar()">Parar</button>&nbsp;&nbsp;
+    <button class="button" onClick="voltar()">Voltar</button>
+	<img src="car.gif" id="car" style="position:absolute; top:50px; left:10px">
+
+	<script type="text/javascript">
+	var timer;
+	var pos = parseInt(car.style.left);
+	var timer2;
+
+	function andar(){
+		pos = pos + 5;
+		car.style.left = pos;
+		timer = window.setTimeout("andar()", 100);
+	}
+
+	function parar(){
+		window.clearTimeout(timer);
+		window.clearTimeout(timer2);
+	}
+	
+	function voltar(){
+		parar();
+		pos = pos - 5;
+		car.style.left = pos;
+		timer2 = window.setTimeout("voltar()", 100);
+		if(pos <= 10){
+			window.clearTimeout(timer2);
+		}
+	}
+	</script>
+</body>
+</html>

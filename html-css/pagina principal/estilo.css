@@ -1,0 +1,41 @@
+body{
+	font-family: Helvetica,Arial,sans-serif;
+	background: url('img/fundo.png') repeat,
+	            url('img/fundo1.png') repeat,
+	            linear-gradient(50deg,#778899,#0000cd);
+	overflow-x: hidden;
+	background-attachment: fixed;            
+}
+.img-logo {
+	height: 80px;
+	width: 200px;
+	display: block;
+	background: url('img/logo.png') no-repeat;
+	background-size: contain;
+	color: transparent;
+}
+
+nav.navbar-default {
+	padding: 15px 0px;
+	background: rgba(255, 255, 255, 0.6);
+}
+
+.navbar-brand{
+	padding: 5px 15px;
+}
+
+.divisor{
+	width: 1px;
+	height: 16px;
+	background: black;
+	margin: 16px 10px;
+}
+
+.navbar-default .navbar-nav>li>a, footer .nav a{
+	color: black;
+}
+
+.navbar-default .navbar-nav>li>a:hover, footer .nav a:hover {
+	color: #0000cd;
+	background: none;
+}

@@ -1,0 +1,6 @@
+USE virtualdc;
+SELECT NOME, SALARIO + 100 FROM cadfun;
+SELECT NOME, SALARIO FROM cadfun;
+SELECT NOME, SALARIO * 1.20 FROM cadfun;
+SELECT 2 + 3 * 5;
+SELECT (2 + 3) * 5;

@@ -1,0 +1,40 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Animação Básica Javascript</title>
+</head>
+<body>
+	<img src="car.gif" id="car" style="position:absolute; top:50px; left:10px" onload="andar()">
+	<img src="car.gif" id="car1" style="position:absolute; top:150px; left:1300px" onload="andar1()">
+
+
+	<script type="text/javascript">
+	var timer;
+	var pos = parseInt(car.style.left);
+	var timer2;
+	var pos1 = parseInt(car1.style.left);
+
+	function andar(){
+		pos = pos + 10.50;
+		car.style.left = pos;
+		timer = window.setTimeout("andar()", 100);
+			if(pos >= 1300){
+			pos = -250;
+		}
+
+	}
+
+	function andar1(){
+		pos1 = pos1 - 11.15;
+		car1.style.left = pos1;
+		timer2 = window.setTimeout("andar1()", 100);
+			if(pos1 <= -50){
+			pos1 = 1475;
+		}
+
+	}
+
+
+	</script>
+</body>
+</html>

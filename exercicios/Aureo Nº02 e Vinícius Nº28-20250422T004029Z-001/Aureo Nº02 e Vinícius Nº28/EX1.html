@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Números Pares de 2 a 100</title>
+	<style type="text/css">		
+		td{font: 80%verdana;text-align: center;color:blue;}
+	</style>
+</head>
+<body>
+	<table border="1" bordercolor="green" cellpading="2" cellspacing="0">
+		<tr bgColor="yellow" borderColorDark="blue" borderColorLight="#999999">
+			<script type="text/javascript">
+				
+				for(i=2;i<=100;i++){
+					if(i % 2==0){
+						if(i % 20==0){
+							document.write('<td>'+i+'</td></tr>');
+							if(i < 100){
+								document.write("<tr bgColor=\'yelllow\' borderColorDark=\'blue\' borderColorLight=\'#999999\'>");
+							}
+						}
+						else{
+							document.write('<td>'+i+'</td>');
+						}
+					}
+				}
+
+			</script>
+		</tr>
+	</table>
+</body>
+</html>

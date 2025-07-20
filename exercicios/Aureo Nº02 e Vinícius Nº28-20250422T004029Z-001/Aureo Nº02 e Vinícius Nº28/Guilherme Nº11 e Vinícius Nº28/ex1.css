@@ -1,0 +1,17 @@
+		td{
+			font: 80%verdana;
+			text-align: center;
+			color:green;
+			font-weight: bold;
+		}
+
+		.trcolor{
+			background-color: yellow;
+			border-color: blue;
+			color: green;
+			font-weight: bold;
+		}
+
+		.tborder{
+			border-color: green; 
+		}

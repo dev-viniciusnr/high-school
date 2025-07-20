@@ -1,0 +1,14 @@
+ALTER TABLE cadfun ADD ADMISSAO DATE;
+SELECT * FROM cadfun;
+UPDATE cadfun SET ADMISSAO = '2006-01-15' WHERE CODFUN = 2;
+UPDATE cadfun SET ADMISSAO = '1999-10-21' WHERE CODFUN = 3;
+UPDATE cadfun SET ADMISSAO = '2004-10-21' WHERE CODFUN = 4;
+UPDATE cadfun SET ADMISSAO = '2006-04-26' WHERE CODFUN = 5;
+UPDATE cadfun SET ADMISSAO = '1980-05-10' WHERE CODFUN = 7;
+UPDATE cadfun SET ADMISSAO = '1999-12-15' WHERE CODFUN = 9;
+UPDATE cadfun SET ADMISSAO = '2000-12-21' WHERE CODFUN = 12;
+UPDATE cadfun SET ADMISSAO = '2000-12-21' WHERE CODFUN = 25;
+
+##########################################################
+SELECT NOME, ADMISSAO FROM cadfun WHERE month(ADMISSAO) = 12;
+#o tipo da coluna admissão é DATE, logo eu tenho as funções month, year e day

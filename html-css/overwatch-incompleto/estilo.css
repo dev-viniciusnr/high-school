@@ -1,0 +1,42 @@
+body,
+.navbar-default {
+	width: 1200px;
+	margin: 0 auto;
+	border: 1px solid #eaeaea;
+}
+
+.logo{
+	height: 75px;
+	width: 300px;
+	padding-left: 20px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	padding-right: 20px
+}
+
+.menu{
+	float:right;
+	margin-right: 50px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+
+
+}
+.menu li {
+	display: inline-block;
+	margin-top: 30px;
+	padding: 0px 20px;
+
+}
+a{
+	color: #696969;
+}
+
+a:link {
+	text-decoration: none;
+	font-weight: bold;
+	color: #696969;
+}
+a:hover{
+	color: orange;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<head>
+	<title>Exercício2</title>
+		<script>
+			function azul(){
+				var no = document.getElementById("fundo");
+				no.style.backgroundColor = '#00BFFF'; 
+			}
+
+			function vermelho(){
+				var no = document.getElementById("fundo");
+				no.style.backgroundColor = '#FF0000';
+			}
+
+			function verde(){
+				var no = document.getElementById("fundo");
+				no.style.backgroundColor = '#00FF7F';
+			}
+
+			function laranja(){
+				var no = document.getElementById("fundo");
+				no.style.backgroundColor = '#FFA500';
+			}
+
+			function preto(){
+				var no = document.getElementById("fundo");
+				no.style.backgroundColor = '#000000';
+			}
+
+			function laranjat(){
+				var no = document.getElementById("titulo");
+				no.style.color = '#FFA500';
+			}
+
+			function verdet(){
+				var no = document.getElementById("titulo");
+				no.style.color = '#00FF7F';
+			}
+
+			function azult(){
+				var no = document.getElementById("titulo");
+				no.style.color = '#00BFFF';
+			}
+
+			function vermelhot(){
+				var no = document.getElementById("titulo");
+				no.style.color = '#FF0000';
+			}
+
+			function branco(){
+				var no = document.getElementById("titulo");
+				no.style.color = 'white';
+			}
+
+
+		</script>
+	</head>
+
+	<body id="fundo">
+
+	<h1 id="titulo">Testando cor de fonte e página</h1>
+		<form>
+			<input type="button" value="Azul" onclick="azul()" style="background-color:#00BFFF;width: 70px; height: 25px;margin-left: 10px;font-weight: bold; ">
+			<input type="button" value="Vermelho" onclick="vermelho()" style="background-color:#FF0000;width: 70px; height: 25px;margin-left: 10px;font-weight: bold; ">
+			<input type="button" value="Verde" onclick="verde()" style="background-color:#00FF7F;width: 70px; height: 25px;margin-left: 10px;font-weight: bold; ">
+			<input type="button" value="Laranja" onclick="laranja()" style="background-color:#FFA500;width: 70px; height: 25px;margin-left: 10px;font-weight: bold; ">
+			<input type="button" value="Preto" onclick="preto()" style="background-color:#000000;width: 70px; height: 25px;margin-left: 10px;font-weight: bold;color:white; ">
+			<br/><br/>
+			<input type="button" value="Laranja" onclick="laranjat()" style="background-color:#FFA500;width: 70px; height: 25px;margin-left: 10px;font-weight: bold; ">
+			<input type="button" value="Verde" onclick="verdet()" style="background-color:#00FF7F;width: 70px; height: 25px;margin-left: 10px;font-weight: bold; ">
+			<input type="button" value="Vermelho" onclick="vermelhot()" style="background-color:#FF0000;width: 70px; height: 25px;margin-left: 10px;font-weight: bold; ">
+			<input type="button" value="Azul" onclick="azult()" style="background-color:#00BFFF;width: 70px; height: 25px;margin-left: 10px;font-weight: bold; ">
+			<input type="button" value="Branco" onclick="branco()" style="background-color:white;width: 70px; height: 25px;margin-left: 10px;font-weight: bold; ">
+		</form>
+	</body>
+</html>

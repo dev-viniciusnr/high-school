@@ -1,0 +1,55 @@
+body{
+	background: #FFA500;
+	font-size: 30px;
+}
+
+nav#menu {
+display: block; 
+
+}
+nav#menu ul {
+font-size:20px;
+position: absolute;
+top: -10px;
+left:750px;
+}
+nav#menu li{
+font-family: 'Sigmar One', cursive;
+display:inline-block;
+padding: 20px;
+transition: background-color 1s;
+border-radius: 20px;
+margin: 0px 30px 0px 0px;
+}
+nav#menu li:hover{
+background-color: #FFFFFF;
+}
+nav#menu a{
+color: #000000;
+text-decoration: none;
+}
+nav#menu a:hover{
+	color: #FFA500;
+
+}
+
+table{
+	background-color: #FFFFFF
+}
+
+a {
+ text-decoration: none;
+ font-color: #ffffff;
+ font-family: 'Sigmar One', cursive;
+ border-radius: 10px;
+ transition: background-color 1s;
+
+}
+
+a:link {
+ color: #000000;
+}
+
+a:hover {
+ background-color: #FFFFFF;
+ color: #ffa500;

@@ -1,0 +1,48 @@
+#text1{
+	color: #4169E1;
+}
+
+#cabecario{
+	float: left;
+	width: 700px;
+}
+
+#img1{
+	float: left;
+	width: 250px;
+	height: 150px;
+	padding: 5px;
+	z-index: 2; 
+}
+
+#text2{
+	z-index: 1;
+}
+
+a{
+	text-decoration: none;
+}
+
+#text3{
+	color: #4169E1;
+	padding-top: 50px;
+}
+
+#img2{
+	float: left;
+	padding: 5px;
+	z-index: 2;
+}
+
+#conteudo1{	
+	float: right;
+	width: 500px;
+	border: red 1px solid;
+	padding-right: 100px;
+	padding-top: 400px;
+	
+}
+#img3{
+	z-index: 2;
+	float: left;
+}

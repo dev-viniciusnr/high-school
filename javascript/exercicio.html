@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Botões</title>
+	<script type="text/javascript">
+		
+		function fatorial(num){
+			if( num < 0){
+				alert ("A função deu errado");
+			}else{
+				if(num == 0){
+					return 1;
+				}else{
+					return (num * fatorial (num-1));
+				}
+			}}
+
+			function fatorialfinal(x){
+				var funcao1 = fatorial(x);
+				resultado = x + "! = ";
+				for (var i = 1; i<= x; i++) {
+					resultado= resultado+i+" x ";
+				} 
+				resultado=resultado+i+"="+funcao1;
+				document.write("<p>"+resultado+"</p">);
+			}
+	</script>
+</head>
+<body>
+	<form>
+		<input type="submit" value="2" onclick="fatorialfinal(2)">
+		<input type="submit" value="6" onclick="fatorialfinal(6)">
+		<input type="submit" value="8" onclick="fatorialfinal(8)">
+		<input type="submit" value="10" onclick="fatorialfinal(10)">
+	</form>
+</body>
+</html>
